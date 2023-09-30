@@ -76,11 +76,11 @@ function createTimer(totalSeconds) {
         if (totalSeconds <= 0) {
             clearInterval(timerInterval);
             timerElement.classList.add('timer-ended');
-            timerElement.textContent = "Time's Up";
+            timerElement.textContent = "Time is up!";
             stopButton.style.display = 'none'; // Hide the Stop Timer button
             deleteButton.style.display = 'inline'; // Show the delete button
             timeLeftElement.style.display = 'none';
-            // Play an audio alert when time's up
+            // Play an audio alert when Time is up!
             playAudioAlert();
         } else {
             timerElement.textContent = formatTime(totalSeconds);
